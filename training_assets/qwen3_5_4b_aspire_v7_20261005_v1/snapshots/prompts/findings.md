@@ -1,0 +1,1 @@
+The robot program is now frozen. Produce a concise findings report describing the observed failure modes, the final generalizable fixes, and any remaining limitations. Do not propose edits, call tools, or claim access to terminal evaluation results.

@@ -1,0 +1,11 @@
+{
+  "status": "passed_offline_only",
+  "tasks": 10,
+  "skill_digest": "f715823eccc1a5e9b2748fd0a1ef7459226b9581196bdcdf85d1b79c6e3a0b33",
+  "source_files": 607,
+  "full_model_hash_verified": true,
+  "config_parsed": true,
+  "services_started": false,
+  "training_started": false,
+  "gpu_canaries": "pending"
+}

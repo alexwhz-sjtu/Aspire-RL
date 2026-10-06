@@ -1,0 +1,54 @@
+{
+  "host": "Inf_H800_2",
+  "gpu_roles": {
+    "actor_fsdp_dp2": [
+      0,
+      1
+    ],
+    "rollout_sglang_tp4": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "sam3": [
+      6
+    ],
+    "contact_graspnet_and_egl": [
+      7
+    ]
+  },
+  "areal_visible_gpus": "0,1,2,3,4,5",
+  "numa": {
+    "0": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "1": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "native_threads_per_runner": 4,
+  "development_runner_count": 3,
+  "broker_max_simulator_concurrency": 3,
+  "ports_suggested": {
+    "sam3": 8114,
+    "contact_graspnet": 8115,
+    "pyroki": 8116,
+    "broker": 8625,
+    "runners": [
+      8626,
+      8627,
+      8628
+    ]
+  },
+  "areal_python": "/data/wanghanzhen/projects/EmbodiedAReal/AReaL/.venv/bin/python",
+  "libero_python": "/data/wanghanzhen/projects/EmbodiedAReal/ASPIRE/aspire/sim/.venv-libero/bin/python3",
+  "service_readiness": "not tested",
+  "gpu_allocation": "plan only, not reserved"
+}

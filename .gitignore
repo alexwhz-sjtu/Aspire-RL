@@ -1,0 +1,36 @@
+# Local runtimes and generated outputs.
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+node_modules/
+.DS_Store
+/runs/
+/outputs/
+/models/
+/checkpoints/
+/artifacts/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.log
+
+# Credentials remain external; only templates may be committed.
+.env
+.env.*
+!.env.example
+secrets.sh
+secrets.*.sh
+!secrets.example.sh
+*.pem
+*.key
+
+# Host-managed libraries are not portable source.
+.local-system-libs/

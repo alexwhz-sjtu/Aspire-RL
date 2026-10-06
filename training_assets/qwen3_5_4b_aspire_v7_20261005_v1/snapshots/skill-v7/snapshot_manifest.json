@@ -1,0 +1,42 @@
+{
+  "aggregate_sha256": "f715823eccc1a5e9b2748fd0a1ef7459226b9581196bdcdf85d1b79c6e3a0b33",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8556dc30c23e1363897c4c8e6e3a7e1d87189caf70b166e5f83d72e93a0716b0",
+      "size_bytes": 4493
+    },
+    {
+      "path": "execution.md",
+      "sha256": "89777e782cb245da5989337347cce6aabd83cb67e48e6ebe3cf096052e230603",
+      "size_bytes": 5469
+    },
+    {
+      "path": "goal-swap.md",
+      "sha256": "a6fe0e8f8f2c53c67533cb66300c71fb033f989340689b797f8e9b162983eb1a",
+      "size_bytes": 13524
+    },
+    {
+      "path": "grasp.md",
+      "sha256": "319b74c84d2168c327823608c927a03e404cfec6592de80b72463260db54e816",
+      "size_bytes": 6144
+    },
+    {
+      "path": "localize.md",
+      "sha256": "04911fd6e78fb8f171b9f39f6a8d77b2e37303729a2578e2f7fb6c49aeeb40d0",
+      "size_bytes": 8414
+    },
+    {
+      "path": "manipulation.md",
+      "sha256": "af80f4937b1999d2d2b95af6ff14838e93721008057334f883227f5bfcc68e70",
+      "size_bytes": 956
+    },
+    {
+      "path": "transport.md",
+      "sha256": "6d3d3191143e1a200ab573b2b4f18a4f6bfc576b0b7442ee536d88c88a233b20",
+      "size_bytes": 4290
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_id": "f715823eccc1a5e9"
+}

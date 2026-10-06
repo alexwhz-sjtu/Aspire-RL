@@ -1,0 +1,29 @@
+{
+  "areal": {
+    "python": "3.11.15",
+    "packages": {
+      "torch": "2.9.1+cu129",
+      "transformers": "5.3.0",
+      "sglang": "0.5.10.post1",
+      "peft": "0.18.1",
+      "flash-attn": "2.8.3+cu128torch2.9",
+      "flash-linear-attention": "0.4.2",
+      "fla-core": "0.4.2",
+      "causal-conv1d": "1.7.0",
+      "triton": "3.5.1",
+      "awex": "0.8.1"
+    }
+  },
+  "libero": {
+    "python": "3.12.13",
+    "packages": {
+      "torch": "2.9.1+cu126",
+      "transformers": "4.57.6",
+      "triton": "3.5.1",
+      "mujoco": "3.3.0",
+      "robosuite": "1.4.0",
+      "libero": "0.1.0"
+    }
+  },
+  "note": "Installed package metadata only; this does not verify CUDA extension loading or a training canary."
+}

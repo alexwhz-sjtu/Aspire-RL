@@ -1,0 +1,106 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "read_search",
+      "description": "Read or search approved workspace, skill, and API reference files.",
+      "strict": true,
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "root": {"type": "string", "enum": ["workspace", "skills", "api_reference"]},
+          "path": {"type": ["string", "null"]},
+          "pattern": {"type": ["string", "null"]},
+          "max_bytes": {"type": "integer", "minimum": 1, "maximum": 131072}
+        },
+        "required": ["root", "path", "pattern", "max_bytes"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "write_edit",
+      "description": "Create or revise the complete robot Python program.",
+      "strict": true,
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mode": {"type": "string", "enum": ["replace", "unified_patch"]},
+          "content": {"type": "string"}
+        },
+        "required": ["mode", "content"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "replay",
+      "description": "Run the current code on visible development seeds 51 through 65.",
+      "strict": true,
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "seeds": {
+            "type": "array",
+            "items": {"type": "integer", "minimum": 51, "maximum": 65},
+            "minItems": 1,
+            "maxItems": 15,
+            "uniqueItems": true
+          }
+        },
+        "required": ["seeds"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "trace_inspection",
+      "description": "Inspect structured diagnostics and up to two RGB keyframes from prior replays.",
+      "strict": true,
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "replay_ids": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "selectors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["trace", "stdout", "stderr", "rgb_keyframes", "mask", "grasp", "ik"]
+            },
+            "minItems": 1,
+            "maxItems": 7
+          },
+          "max_bytes": {"type": "integer", "minimum": 1, "maximum": 131072},
+          "max_images": {"type": "integer", "minimum": 0, "maximum": 2}
+        },
+        "required": ["replay_ids", "selectors", "max_bytes", "max_images"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "final_submission",
+      "description": "Freeze the selected current robot program. This is irreversible.",
+      "strict": true,
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  }
+]

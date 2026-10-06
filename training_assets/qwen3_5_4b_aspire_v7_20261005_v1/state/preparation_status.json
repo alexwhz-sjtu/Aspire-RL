@@ -1,0 +1,19 @@
+{
+  "status": "prepared_not_started",
+  "training_started": false,
+  "prepared_at": "2026-10-05T05:59:30.487837+00:00",
+  "gates": {
+    "offline_assets": "passed",
+    "focused_tests": "not_run",
+    "services_readiness": "pending",
+    "gateway_parser_probe": "pending",
+    "vlm_131k_forward_backward": "pending",
+    "four_concurrent_131k_rollouts": "pending",
+    "fsdp_nonzero_adv_update": "pending",
+    "zero_adv_rank_consistency": "pending",
+    "lora_publish_and_version_sync": "pending",
+    "acceptance_train": "pending",
+    "post_training_heldout": "pending"
+  },
+  "verification_report": "state/offline_verification.json"
+}

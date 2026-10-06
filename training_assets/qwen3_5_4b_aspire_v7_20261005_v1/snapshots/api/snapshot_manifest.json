@@ -1,0 +1,12 @@
+{
+  "aggregate_sha256": "abb6f6540e1f452da060e03304bc556849a44940b943cc6c750967c73ffbf417",
+  "files": [
+    {
+      "path": "franka_libero_reduced.md",
+      "sha256": "e93191b587187adea219080353ee596483bc36ef4e02a566ae51ac2847915bc2",
+      "size_bytes": 13750
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_id": "abb6f6540e1f452d"
+}

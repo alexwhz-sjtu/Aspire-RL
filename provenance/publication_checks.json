@@ -1,0 +1,72 @@
+{
+  "source_sha256_verification": "passed",
+  "staged_blob_sha256_verification": "passed",
+  "secret_pattern_scan": "no findings",
+  "dependency_gitlinks": "7 pins match captured metadata",
+  "contact_graspnet_patch": "3 patched file hashes match current source",
+  "remote_source_recheck": {
+    "checked": 2085,
+    "mismatches": []
+  },
+  "focused_tests": {
+    "returncode": 0,
+    "command": [
+      "/data/wanghanzhen/projects/EmbodiedAReal/AReaL/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_aspire_config.py",
+      "tests/test_aspire_agent.py",
+      "tests/test_aspire_generate_candidates.py",
+      "tests/test_episode_loss_reduction.py"
+    ],
+    "tail": "............................                                             [100%]\n28 passed in 23.91s\n",
+    "test_copy": "captured snapshot restored after precommit"
+  },
+  "precommit": {
+    "returncode": 1,
+    "audit_path": "/tmp/aspire-rl-publish-audit.bHaoO4",
+    "source_snapshot_mutated": false,
+    "audit_copy_changed_files": [
+      "areal/v2/inference_service/sglang/scheduler.py",
+      "docs/en/cli_reference.md",
+      "docs/zh/cli_reference.md",
+      "examples/aspire/README.md",
+      "examples/aspire/preflight.py",
+      "examples/aspire/prompts/findings.md",
+      "examples/aspire/prompts/system.md",
+      "examples/aspire/runtime.py",
+      "examples/aspire/tool_client.py",
+      "tests/test_aspire_agent.py",
+      "tests/test_aspire_config.py",
+      "tests/test_fsdp_selective_logits.py",
+      "tests/test_local_scheduler_internal_http.py",
+      "tests/v2/inference_service/test_inf_bridge.py",
+      "uv.vllm.lock"
+    ],
+    "hook_summary": [
+      "clang-format.........................................(no files to check)Skipped",
+      "check yaml...............................................................Passed",
+      "fix end of files.........................................................Passed",
+      "trim trailing whitespace.................................................Passed",
+      "Check for large files....................................................Failed",
+      "Check JSON files.........................................................Passed",
+      "Detect private keys......................................................Passed",
+      "mdformat.................................................................Failed",
+      "Run Linter Check (Ruff)..................................................Passed",
+      "Run Formatter (Ruff).....................................................Failed",
+      "nbstripout - Strip notebook output.......................................Passed",
+      "Check pyproject.toml consistency.........................................Failed",
+      "Regenerate uv lockfiles..................................................Failed",
+      "Generate CLI documentation...............................................Failed",
+      "Check SPDX license header................................................Passed",
+      "Format CODEOWNERS........................................................Passed"
+    ]
+  },
+  "precommit_notes": [
+    "The full check ran in a disposable copy; its formatting/docs/lockfile changes were not applied to the captured baseline.",
+    "Two upstream assets exceed the source project 1 MiB check threshold but are below the GitHub 100 MiB limit.",
+    "pyproject variants differ in httpx socks and uv extra-build-dependencies."
+  ],
+  "gpu_training_canary": "not run by this publication task"
+}

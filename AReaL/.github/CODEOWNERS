@@ -1,0 +1,34 @@
+# Default: catch-all (lead + two active maintainers as backups).
+# Last matching rule wins, so this is the fallback for any path
+# not covered by a more specific rule below.
+*                               @garrett4wade @sitabulaixizawaluduo @fishcrap
+
+# Core package
+/areal/api/                     @garrett4wade @rchardx @sitabulaixizawaluduo
+/areal/engine/                  @rchardx @nuzant @Le8r0nJames @garrett4wade @geshi001 @sitabulaixizawaluduo
+/areal/v2/inference_service/    @nuzant @Le8r0nJames @guozhihao-224 @TaoZex @sitabulaixizawaluduo
+/areal/v2/agent_service/        @CormickKneey @nuzant @Le8r0nJames @sitabulaixizawaluduo
+/areal/v2/training_service/     @sitabulaixizawaluduo @garrett4wade @sitabulaixizawaluduo
+/areal/v2/weight_update/        @TaoZex @garrett4wade @sitabulaixizawaluduo
+/areal/infra/                   @HwVanICI @garrett4wade @guozhihao-224 @sitabulaixizawaluduo
+/areal/models/                  @rchardx @nuzant @Le8r0nJames @geshi001 @PrometheusComing @sitabulaixizawaluduo
+/areal/trainer/                 @garrett4wade @rchardx @fishcrap @sitabulaixizawaluduo
+
+# Tests & Examples
+/tests/                         @garrett4wade @sitabulaixizawaluduo
+/examples/                      @HwVanICI @CormickKneey @PrometheusComing @sitabulaixizawaluduo
+
+# Documentation
+/docs/                          @garrett4wade @nuzant @Le8r0nJames @sitabulaixizawaluduo
+
+# CI/CD & infrastructure
+/.github/                       @garrett4wade @nuzant @Le8r0nJames @sitabulaixizawaluduo
+/Dockerfile                     @garrett4wade @fishcrap @sitabulaixizawaluduo
+pyproject.toml                  @garrett4wade @fishcrap @sitabulaixizawaluduo
+pyproject.vllm.toml             @garrett4wade @fishcrap @sitabulaixizawaluduo
+uv.lock                         @garrett4wade @fishcrap @sitabulaixizawaluduo
+uv.vllm.lock                    @garrett4wade @fishcrap @sitabulaixizawaluduo
+
+# Governance & community
+GOVERNANCE.md                   @garrett4wade @sitabulaixizawaluduo
+CONTRIBUTING.md                 @garrett4wade @sitabulaixizawaluduo
